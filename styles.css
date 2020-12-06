@@ -6,7 +6,6 @@
     
     --white:#ffffff;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-    --txtshadow: 50px 50px 100px var(--darkblue);
 }
 html{
     box-sizing: border-box;
@@ -34,9 +33,10 @@ img{
     font-size: 3.5rem;
     text-align: right;
     letter-spacing: 5px;
-    text-shadow: var(--txtshadow);
+    text-shadow: 2px 0px 10px var(--darkblue);
     text-decoration: none;
     border-bottom: 3px solid white;
+    line-height: normal;
 }
 
 .nav-links ul{
@@ -47,7 +47,6 @@ img{
     align-items: center;
     justify-content: center;
     padding: 0;
-
 }
 .nav-links a{
     display: block;
@@ -90,7 +89,7 @@ img{
     font-size: 3rem;
     letter-spacing: 3px;
     padding-left: 2rem;
-    text-shadow: var(--txtshadow);
+    text-shadow: 2px 0px 10px var(--darkblue);
 }
 .recent{
     display: flex;
@@ -120,7 +119,7 @@ footer{
         grid-template-columns: 1fr,2fr;
     }
     .top h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .nav-links ul{
         grid-template-columns: 1fr;
@@ -142,6 +141,7 @@ footer{
     }
     .nav-links ul{
         grid-template-columns: repeat(2, 1fr);
+        grid-gap:5px;
     }
     .nav-links a{
         font-size: 1rem;
